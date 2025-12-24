@@ -78,7 +78,7 @@ add_project_section "uv-init-app" "--app"
 add_project_section "uv-init-lib" "--lib"
 add_project_section "uv-init-bare" "--bare"
 
-# Replace placeholder with actual version
-sed -i '' "s/UV_VERSION_PLACEHOLDER/$UV_VERSION/" README.md
+# Replace placeholder with actual version (portable sed that works on both macOS and Linux)
+sed -i.bak "s/UV_VERSION_PLACEHOLDER/$UV_VERSION/" README.md && rm README.md.bak
 
 echo "README.md generated!"
