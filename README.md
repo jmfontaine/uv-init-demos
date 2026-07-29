@@ -2,7 +2,7 @@
 
 This repository contains examples of projects created with different `uv init` arguments.
 
-Generated using: uv 0.11.32 (x86_64-unknown-linux-gnu)
+Generated using: uv 0.12.0 (x86_64-unknown-linux-gnu)
 
 ## Projects
 
@@ -17,8 +17,8 @@ Files:
 ```
 ./.python-version
 ./README.md
-./main.py
 ./pyproject.toml
+./src/uv_init/__init__.py
 ```
 
 ### [uv-init-package](./uv-init-package/)
@@ -62,8 +62,8 @@ Files:
 ```
 ./.python-version
 ./README.md
-./main.py
 ./pyproject.toml
+./src/uv_init_app/__init__.py
 ```
 
 ### [uv-init-lib](./uv-init-lib/)
